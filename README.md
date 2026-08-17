@@ -1,6 +1,4 @@
-<p style="font-size: 100px;">Business Requirements</p>
-
-
+# 23726841_NguyenThanhNghia_cabsystem
 # Bước 1: Tổng quan hệ thống
 ## 1.1. Vấn đề của hệ thống hiện tại
 
