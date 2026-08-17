@@ -97,7 +97,7 @@ Hệ thống có 3 nhóm người dùng chính:
 
 Stakeholder là cá nhân, nhóm người hoặc tổ chức có ảnh hưởng đến hệ thống CAB hoặc bị ảnh hưởng bởi hệ thống.
 
-| STT | Stakeholder | Tên / Đối tượng | Vai trò |
+| STT | Stakeholder |Vai trò |
 |---|---|---|---|
 | 1 | Khách hàng | Sử dụng dịch vụ để đặt xe, theo dõi chuyến, thanh toán và đánh giá tài xế |
 | 2 | Tài xế | Nhận chuyến, thực hiện chuyến, cập nhật vị trí và trạng thái chuyến |
