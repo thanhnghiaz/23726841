@@ -1,4 +1,4 @@
-<h1>Đặt xe trực tuyến</h1>
+<p style="font-size=larger">Đặt xe trực tuyến<p>
 
 # Bước 1: Tổng quan hệ thống
 ## 1.1. Vấn đề của hệ thống hiện tại
