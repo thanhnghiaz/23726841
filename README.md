@@ -1,5 +1,5 @@
 # Bước 1: Tổng quan hệ thống
-##1.1. Vấn đề của hệ thống hiện tại
+## 1.1. Vấn đề của hệ thống hiện tại
 
 Hệ thống CAB hiện tại đang tồn tại một số vấn đề:
 
