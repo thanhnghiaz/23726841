@@ -95,8 +95,6 @@ Hệ thống có 3 nhóm người dùng chính:
 
 ## 2.1. Các bên liên quan – Stakeholder
 
-## 2.1. Các bên liên quan – Stakeholder
-
 | Stakeholder | Vai trò |
 |---|---|
 | **Khách hàng** | Đặt xe, theo dõi chuyến đi, thanh toán và đánh giá tài xế |
