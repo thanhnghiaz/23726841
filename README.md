@@ -173,53 +173,22 @@ quadrantChart
 
 ---
 
-# Bước 4: System Users
+# Bước 4:
+Customer
+   ↓
+Create Booking
+   ↓
+Driver Matching
+   ↓
+Driver Accept
+   ↓
+Trip Execution
+   ↓
+Calculate Fare
+   ↓
+Payment
+   ↓
+Notification
+   ↓
+Rating
 
-## 4.1. Người dùng chính
-
-Hệ thống có **3 nhóm người dùng chính**:
-
-| # | User | Mục đích sử dụng |
-|---|---|---|
-| 1 | **Customer** | Đăng ký, đăng nhập, đặt xe, theo dõi chuyến, thanh toán, xem lịch sử và đánh giá tài xế |
-| 2 | **Driver** | Quản lý hồ sơ, trạng thái sẵn sàng, nhận/từ chối chuyến, cập nhật vị trí và trạng thái chuyến |
-| 3 | **Operation Staff** | Theo dõi và quản lý khách hàng, tài xế, phương tiện, chuyến đi và xử lý sự cố |
-
-## 4.2. Người dùng / hệ thống tương tác khác
-
-| # | User / System | Mục đích sử dụng |
-|---|---|---|
-| 1 | **System Admin** | Quản trị tài khoản, phân quyền và cấu hình hệ thống |
-| 2 | **Management** | Theo dõi KPI, doanh thu, báo cáo và hiệu quả hoạt động |
-| 3 | **Finance / Accounting** | Theo dõi giao dịch, thanh toán và doanh thu |
-| 4 | **Customer Support** | Hỗ trợ khách hàng và tra cứu thông tin chuyến |
-| 5 | **Payment Provider** | Xử lý các giao dịch thanh toán điện tử |
-| 6 | **Notification Provider** | Gửi Push Notification, SMS, Email và các kênh thông báo khác |
-| 7 | **Map / Location Provider** | Cung cấp bản đồ, vị trí, khoảng cách và dữ liệu hỗ trợ tính ETA |
-
----
-
-# Bước 5: Business Requirements
-
-## 5.1. Yêu cầu nghiệp vụ
-
-| ID | Yêu cầu nghiệp vụ | Mô tả |
-|---|---|---|
-| **BR-01** | **Đặt xe trực tuyến** | Cho phép khách hàng tạo yêu cầu đặt xe, nhập điểm đón, điểm đến và lựa chọn loại xe. |
-| **BR-02** | **Tự động tìm và phân công tài xế** | Tự động tìm tài xế phù hợp dựa trên vị trí, trạng thái sẵn sàng và các tiêu chí vận hành. |
-| **BR-03** | **Xử lý tài xế từ chối hoặc không phản hồi** | Tiếp tục tìm tài xế khác khi tài xế được đề xuất từ chối hoặc không phản hồi mà không yêu cầu khách hàng tạo lại yêu cầu. |
-| **BR-04** | **Theo dõi chuyến đi** | Cho phép khách hàng theo dõi trạng thái chuyến, thông tin tài xế và thời gian dự kiến tài xế đến. |
-| **BR-05** | **Quản lý vòng đời chuyến đi** | Quản lý chuyến từ khi tạo yêu cầu, tìm tài xế, nhận chuyến, đón khách, di chuyển đến hoàn thành hoặc hủy chuyến. |
-| **BR-06** | **Quản lý vị trí tài xế** | Lưu và sử dụng thông tin vị trí tài xế để hỗ trợ tìm kiếm tài xế gần khách hàng và tính ETA. |
-| **BR-07** | **Tính cước** | Xác định số tiền khách hàng phải trả dựa trên loại dịch vụ, thông tin chuyến đi và chính sách tính cước. |
-| **BR-08** | **Quản lý thanh toán** | Hỗ trợ thanh toán tiền mặt và thanh toán điện tử thông qua Payment Provider mà không lưu trực tiếp thông tin thanh toán nhạy cảm. |
-| **BR-09** | **Xử lý thanh toán thất bại** | Thông báo kết quả thanh toán và cho phép xử lý lại giao dịch theo chính sách của doanh nghiệp. |
-| **BR-10** | **Quản lý thông báo** | Gửi thông báo cho khách hàng và tài xế khi xảy ra các sự kiện quan trọng trong quá trình đặt và thực hiện chuyến. |
-| **BR-11** | **Quản lý tài xế và phương tiện** | Quản lý hồ sơ tài xế, thông tin phương tiện, trạng thái hoạt động và thông tin vị trí. |
-| **BR-12** | **Quản lý vận hành** | Cung cấp công cụ để Operation Staff theo dõi chuyến đang diễn ra, trạng thái tài xế và xử lý các trường hợp chuyến bị lỗi. |
-| **BR-13** | **Quản lý người dùng và phân quyền** | Quản lý tài khoản, xác thực người dùng và kiểm soát quyền truy cập đối với các chức năng yêu cầu tài khoản hoặc quyền quản trị. |
-| **BR-14** | **Báo cáo và thống kê** | Cung cấp báo cáo về số lượng chuyến, doanh thu, tỷ lệ hoàn thành, tỷ lệ hủy và hiệu quả hoạt động của tài xế. |
-| **BR-15** | **Đánh giá tài xế** | Cho phép khách hàng đánh giá tài xế sau khi chuyến đi hoàn thành. |
-| **BR-16** | **Lưu vết hoạt động** | Ghi nhận các thao tác quan trọng để phục vụ kiểm tra, giám sát và điều tra khi xảy ra sự cố. |
-| **BR-17** | **Đảm bảo khả năng mở rộng và ổn định** | Cho phép các thành phần mở rộng độc lập khi tải tăng và hạn chế việc lỗi ở thanh toán hoặc thông báo ảnh hưởng đến toàn bộ hệ thống. |
-| **BR-18** | **Hỗ trợ mở rộng tính năng** | Cho phép bổ sung loại dịch vụ, phương thức thanh toán, nhà cung cấp thanh toán, kênh thông báo và các chức năng mới trong tương lai. |
