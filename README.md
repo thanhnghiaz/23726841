@@ -126,6 +126,42 @@ Hệ thống có 3 nhóm người dùng chính:
 | **Map / Location Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo dữ liệu vị trí, khoảng cách và ETA hoạt động ổn định |
 
 ---
+## 2.2. Stakeholder Matrix
+
+```mermaid
+quadrantChart
+    title CAB System - Stakeholder Matrix
+    x-axis "Interest thấp" --> "Interest cao"
+    y-axis "Power thấp" --> "Power cao"
+
+    quadrant-1 "Manage Closely"
+    quadrant-2 "Keep Satisfied"
+    quadrant-3 "Monitor"
+    quadrant-4 "Keep Informed"
+
+    "Management": [0.85, 0.90]
+    "Customer": [0.85, 0.25]
+    "Driver": [0.80, 0.25]
+    "Operation Staff": [0.85, 0.85]
+    "System Admin": [0.85, 0.80]
+
+    "Finance / Accounting": [0.50, 0.75]
+    "Customer Support": [0.75, 0.45]
+
+    "Payment Provider": [0.50, 0.70]
+    "Notification Provider": [0.50, 0.50]
+    "Map / Location Provider": [0.50, 0.70]
+
+### Mapping theo bảng của bạn
+
+| Quadrant | Stakeholder |
+|---|---|
+| **Manage Closely** | Management, Operation Staff, System Admin |
+| **Keep Satisfied** | Finance / Accounting, Payment Provider, Map / Location Provider |
+| **Keep Informed** | Customer, Driver, Customer Support |
+| **Monitor** | Notification Provider |
+
+**Một điểm cần chỉnh:** `Customer Support` trong bảng của bạn là **Power = Trung bình, Interest = Cao**, nên mình đặt ở vùng **Keep Informed**, nhưng không đặt quá sát nhóm Power thấp. Điều này phản ánh đúng bảng bạn đang dùng hơn.
 
 # Bước 3: Business Objectives
 
