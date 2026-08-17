@@ -173,22 +173,54 @@ quadrantChart
 
 ---
 
-# Bước 4:
-Customer
-   ↓
-Create Booking
-   ↓
-Driver Matching
-   ↓
-Driver Accept
-   ↓
-Trip Execution
-   ↓
-Calculate Fare
-   ↓
-Payment
-   ↓
-Notification
-   ↓
-Rating
+# Bước 4: Phạm vi dự án trong 7 tuần
+
+Do thời gian triển khai chỉ có **7 tuần**, dự án được chia thành:
+
+- **MVP – Must Have:** Bắt buộc hoàn thành trong 7 tuần.
+- **Future Enhancement:** Các chức năng có thể phát triển ở giai đoạn sau.
+
+## MVP trong 7 tuần
+
+| Nhóm | Phạm vi |
+|---|---|
+| Authentication | Đăng ký, đăng nhập, xác thực người dùng |
+| Customer | Quản lý hồ sơ, đặt xe, theo dõi chuyến |
+| Driver | Hồ sơ, phương tiện, trạng thái nhận chuyến |
+| Booking | Tạo và quản lý yêu cầu đặt xe |
+| Driver Matching | Tìm kiếm và phân công tài xế |
+| Trip | Quản lý trạng thái chuyến đi |
+| Pricing | Tính cước chuyến đi |
+| Payment | Tiền mặt + thanh toán điện tử |
+| Notification | Thông báo cho Customer/Driver |
+| Rating | Đánh giá tài xế |
+| Operation | Quản lý và giám sát hệ thống |
+| Reporting | Báo cáo cơ bản |
+| Security | Authentication, Authorization, Audit Log |
+
+---
+
+# 3. Các module chính
+
+## 3.1. Authentication & Authorization Module
+
+Quản lý tài khoản và quyền truy cập hệ thống.
+
+### Chức năng
+
+- Đăng ký tài khoản Customer.
+- Đăng nhập.
+- Đăng xuất.
+- Xác thực người dùng.
+- Quản lý session/token.
+- Phân quyền người dùng.
+- Role-based access control (RBAC).
+
+### Roles
+
+```text
+CUSTOMER
+DRIVER
+OPERATOR
+ADMIN
 
