@@ -141,3 +141,41 @@ quadrantChart
     "Payment Provider": [0.50, 0.65]
     "Notification Provider": [0.40, 0.45]
 ```
+
+# Business Objectives (BO)
+
+## BO01 – Tự động hóa quy trình đặt xe
+
+Tự động hóa quy trình từ khi khách hàng tạo yêu cầu đặt xe đến khi hoàn thành chuyến, giảm sự phụ thuộc vào tổng đài và thao tác thủ công.
+
+## BO02 – Tối ưu việc phân công tài xế
+
+Tự động tìm và ưu tiên tài xế phù hợp dựa trên vị trí, trạng thái sẵn sàng và các tiêu chí vận hành.
+
+## BO03 – Nâng cao trải nghiệm khách hàng
+
+Cho phép khách hàng đặt xe thuận tiện, theo dõi trạng thái chuyến, thông tin tài xế, thời gian dự kiến đến và lịch sử chuyến đi.
+
+## BO04 – Nâng cao hiệu quả vận hành
+
+Cung cấp công cụ giúp nhân viên vận hành quản lý khách hàng, tài xế, phương tiện, chuyến đi và xử lý các trường hợp bất thường.
+
+## BO05 – Quản lý tập trung thanh toán và doanh thu
+
+Tập trung quản lý thông tin cước phí, giao dịch và kết quả thanh toán, đồng thời hỗ trợ nhiều phương thức thanh toán.
+
+## BO06 – Cải thiện khả năng giám sát và báo cáo
+
+Cung cấp dữ liệu và báo cáo về số lượng chuyến, doanh thu, tỷ lệ hoàn thành, tỷ lệ hủy và hiệu quả hoạt động của tài xế.
+
+## BO07 – Đảm bảo an toàn và bảo mật
+
+Bảo vệ thông tin cá nhân, dữ liệu vị trí và giao dịch; kiểm soát quyền truy cập và lưu vết các thao tác quan trọng.
+
+## BO08 – Đảm bảo khả năng mở rộng
+
+Xây dựng hệ thống có khả năng phục vụ số lượng lớn khách hàng và tài xế, đồng thời cho phép mở rộng từng thành phần khi nhu cầu tăng.
+
+## BO09 – Hỗ trợ mở rộng sản phẩm trong tương lai
+
+Cho phép doanh nghiệp bổ sung loại dịch vụ, phương thức thanh toán, nhà cung cấp thanh toán, kênh thông báo và các chức năng mới mà không phải xây dựng lại toàn bộ hệ thống.
