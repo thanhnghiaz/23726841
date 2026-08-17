@@ -173,54 +173,32 @@ quadrantChart
 
 ---
 
-# Bước 4: Phạm vi dự án trong 7 tuần
+## 4. Kế hoạch triển khai 7 tuần
 
-Do thời gian triển khai chỉ có **7 tuần**, dự án được chia thành:
+| Tuần | Module | Nội dung chính |
+|---|---|---|
+| **Tuần 1** | **M01 - Xác thực & Quản lý tài khoản** | Đăng ký, đăng nhập, xác thực, cập nhật thông tin và phân quyền |
+| **Tuần 2** | **M02 - Quản lý khách hàng** + **M03 - Quản lý tài xế & phương tiện** | Hồ sơ khách hàng, tài xế, phương tiện và trạng thái hoạt động |
+| **Tuần 3** | **M04 - Đặt xe** | Tạo yêu cầu, điểm đón, điểm đến, loại xe và quản lý yêu cầu đặt xe |
+| **Tuần 4** | **M05 - Phân công tài xế** + **M06 - Quản lý chuyến đi & định vị** | Tìm tài xế, phân công, xử lý từ chối/timeout, trạng thái chuyến và vị trí |
+| **Tuần 5** | **M07 - Tính cước & thanh toán** | Tính cước, tiền mặt, thanh toán điện tử và xử lý giao dịch thất bại |
+| **Tuần 6** | **M08 - Thông báo** + **M09 - Vận hành & quản trị** + **M10 - Báo cáo & kiểm toán** | Thông báo, quản lý vận hành, báo cáo, phân quyền và audit log |
+| **Tuần 7** | **Tích hợp & hoàn thiện** | Kiểm thử tích hợp, kiểm thử nghiệm thu, sửa lỗi, kiểm thử hiệu năng, triển khai và bàn giao |
+## 5. Yêu cầu nghiệp vụ (Business Requirements)
 
-- **MVP – Must Have:** Bắt buộc hoàn thành trong 7 tuần.
-- **Future Enhancement:** Các chức năng có thể phát triển ở giai đoạn sau.
-
-## MVP trong 7 tuần
-
-| Nhóm | Phạm vi |
-|---|---|
-| Authentication | Đăng ký, đăng nhập, xác thực người dùng |
-| Customer | Quản lý hồ sơ, đặt xe, theo dõi chuyến |
-| Driver | Hồ sơ, phương tiện, trạng thái nhận chuyến |
-| Booking | Tạo và quản lý yêu cầu đặt xe |
-| Driver Matching | Tìm kiếm và phân công tài xế |
-| Trip | Quản lý trạng thái chuyến đi |
-| Pricing | Tính cước chuyến đi |
-| Payment | Tiền mặt + thanh toán điện tử |
-| Notification | Thông báo cho Customer/Driver |
-| Rating | Đánh giá tài xế |
-| Operation | Quản lý và giám sát hệ thống |
-| Reporting | Báo cáo cơ bản |
-| Security | Authentication, Authorization, Audit Log |
-
----
-
-# 3. Các module chính
-
-## 3.1. Authentication & Authorization Module
-
-Quản lý tài khoản và quyền truy cập hệ thống.
-
-### Chức năng
-
-- Đăng ký tài khoản Customer.
-- Đăng nhập.
-- Đăng xuất.
-- Xác thực người dùng.
-- Quản lý session/token.
-- Phân quyền người dùng.
-- Role-based access control (RBAC).
-
-### Roles
-
-```text
-CUSTOMER
-DRIVER
-OPERATOR
-ADMIN
+| ID     | Yêu cầu nghiệp vụ | Mô tả |
+|--------|---|---|
+| BR-01 | **Đặt xe trực tuyến** | Cho phép khách hàng đặt xe trực tuyến, chọn điểm đi, điểm đến một cách nhanh chóng và thuận tiện. |
+| BR-02 | **Tự động tìm và phân công tài xế** | Tự động tìm tài xế phù hợp dựa trên vị trí, trạng thái sẵn sàng và các tiêu chí vận hành. |
+| BR-03 | **Theo dõi chuyến đi** | Cho phép khách hàng theo dõi trạng thái chuyến đi, thông tin tài xế và thời gian dự kiến tài xế đến. |
+| BR-04 | **Đánh giá chuyến đi** | Cho phép khách hàng đánh giá tài xế sau khi chuyến đi hoàn thành và ghi nhận phản hồi để doanh nghiệp theo dõi chất lượng dịch vụ. |
+| BR-05 | **Tính cước** | Xác định số tiền khách hàng phải trả dựa trên thông tin chuyến đi và chính sách tính cước của doanh nghiệp. |
+| BR-06 | **Quản lý thanh toán** | Hỗ trợ thanh toán tiền mặt và thanh toán điện tử thông qua nhà cung cấp thanh toán bên ngoài. |
+| BR-07 | **Quản lý thông báo** | Gửi thông báo cho khách hàng và tài xế về các sự kiện quan trọng trong quá trình đặt và thực hiện chuyến đi. |
+| BR-08 | **Quản lý tài xế và phương tiện** | Cho phép quản lý thông tin tài xế, phương tiện, trạng thái hoạt động và vị trí của tài xế. |
+| BR-09 | **Quản lý vận hành** | Cung cấp công cụ để nhân viên vận hành quản lý khách hàng, tài xế, phương tiện, chuyến đi và giao dịch. |
+| BR-10 | **Báo cáo và thống kê** | Cung cấp báo cáo về số lượng chuyến, doanh thu, tỷ lệ hoàn thành, tỷ lệ hủy và hiệu quả hoạt động của tài xế. |
+| BR-11 | **Bảo mật và kiểm soát truy cập** | Bảo vệ thông tin cá nhân, dữ liệu vị trí, dữ liệu giao dịch và kiểm soát quyền truy cập của người dùng. |
+| BR-12 | **Khả năng mở rộng và ổn định** | Đảm bảo hệ thống có thể phục vụ số lượng lớn người dùng và hạn chế ảnh hưởng khi một thành phần gặp sự cố. |
+| BR-13 | **Khả năng mở rộng tính năng** | Cho phép bổ sung loại dịch vụ, phương thức thanh toán, kênh thông báo và các tính năng mới trong tương lai. |
 
