@@ -91,97 +91,108 @@ Hệ thống có 3 nhóm người dùng chính:
 | **Notification Provider** | Gửi Push Notification, SMS, Email hoặc các kênh khác |
 
 ---
-## 2. Stakeholders
+# Bước 2: Stakeholder Analysis
+
+## 2.1. Các bên liên quan – Stakeholder
 
 | # | Stakeholder | Vai trò |
 |---|---|---|
-| 1 | **Ban giám đốc** | Chủ dự án, ra quyết định và định hướng kinh doanh |
-| 2 | **Khách hàng (Customer)** | Người sử dụng dịch vụ đặt xe |
-| 3 | **Tài xế (Driver)** | Người cung cấp dịch vụ vận chuyển |
-| 4 | **Nhân viên vận hành (Operation Staff)** | Quản lý và hỗ trợ hoạt động đặt xe |
-| 5 | **Admin** | Quản trị hệ thống và phân quyền |
-| 6 | **Payment Provider** | Cung cấp dịch vụ thanh toán điện tử |
-| 7 | **Notification Provider** | Cung cấp dịch vụ gửi thông báo |
-| 8 | **Map / Location Provider** | Cung cấp dịch vụ bản đồ, định vị và ETA |
+| 1 | **Management** | Chủ dự án, định hướng kinh doanh, theo dõi KPI, doanh thu và hiệu quả hoạt động |
+| 2 | **Customer** | Người sử dụng dịch vụ, đặt xe, theo dõi chuyến, thanh toán và đánh giá tài xế |
+| 3 | **Driver** | Người cung cấp dịch vụ vận chuyển, nhận và thực hiện chuyến |
+| 4 | **Operation Staff** | Quản lý hoạt động đặt xe, theo dõi chuyến, tài xế và xử lý sự cố vận hành |
+| 5 | **System Admin** | Quản trị tài khoản, phân quyền và cấu hình hệ thống |
+| 6 | **Finance / Accounting** | Theo dõi giao dịch, thanh toán và doanh thu |
+| 7 | **Customer Support** | Hỗ trợ khách hàng và tra cứu thông tin chuyến đi |
+| 8 | **Payment Provider** | Cung cấp dịch vụ xử lý thanh toán điện tử |
+| 9 | **Notification Provider** | Cung cấp dịch vụ gửi Push Notification, SMS, Email hoặc các kênh khác |
+| 10 | **Map / Location Provider** | Cung cấp bản đồ, định vị, khoảng cách và dữ liệu hỗ trợ tính ETA |
 
+---
 
-## 3. Stakeholder Matrix
+## 2.2. Stakeholder Matrix
 
 | Stakeholder | Power | Interest | Strategy |
 |---|---|---|---|
-| **Ban giám đốc** | Cao | Cao | **Manage Closely** – Thường xuyên cập nhật tiến độ, rủi ro và các quyết định quan trọng |
-| **Khách hàng** | Thấp | Cao | **Keep Informed** – Thu thập feedback và cập nhật các thay đổi ảnh hưởng đến trải nghiệm |
-| **Tài xế** | Thấp | Cao | **Keep Informed** – Thu thập nhu cầu, feedback và đảm bảo quy trình nhận/thực hiện chuyến phù hợp |
-| **Nhân viên vận hành** | Cao | Cao | **Manage Closely** – Tham gia phân tích nghiệp vụ, kiểm thử và xác nhận quy trình |
-| **Admin** | Cao | Cao | **Manage Closely** – Tham gia xác định yêu cầu quản trị, bảo mật và phân quyền |
-| **Payment Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo tích hợp, giao dịch và xử lý lỗi hoạt động ổn định |
+| **Management** | Cao | Cao | **Manage Closely** – Cập nhật tiến độ, rủi ro, KPI, doanh thu và các quyết định quan trọng |
+| **Customer** | Thấp | Cao | **Keep Informed** – Thu thập feedback và cung cấp thông tin về các thay đổi ảnh hưởng đến trải nghiệm |
+| **Driver** | Thấp | Cao | **Keep Informed** – Thu thập nhu cầu, feedback và đảm bảo quy trình nhận/thực hiện chuyến phù hợp |
+| **Operation Staff** | Cao | Cao | **Manage Closely** – Tham gia phân tích nghiệp vụ, kiểm thử và xác nhận quy trình vận hành |
+| **System Admin** | Cao | Cao | **Manage Closely** – Xác định yêu cầu quản trị, phân quyền, cấu hình và bảo mật hệ thống |
+| **Finance / Accounting** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo yêu cầu về giao dịch, thanh toán và báo cáo doanh thu |
+| **Customer Support** | Trung bình | Cao | **Keep Informed** – Cung cấp công cụ tra cứu và hỗ trợ xử lý các vấn đề của khách hàng |
+| **Payment Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo tích hợp, giao dịch và xử lý lỗi thanh toán hoạt động ổn định |
 | **Notification Provider** | Trung bình | Trung bình | **Monitor** – Theo dõi khả năng tích hợp và trạng thái dịch vụ |
-| **Map/Location Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo dữ liệu vị trí, khoảng cách và ETA hoạt động ổn định |
+| **Map / Location Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo dữ liệu vị trí, khoảng cách và ETA hoạt động ổn định |
 
+---
 
+# Bước 3: Business Objectives
 
-
-```mermaid
-quadrantChart
-    title CAB System - Stakeholder Matrix
-    x-axis Low Interest --> High Interest
-    y-axis Low Power --> High Power
-
-    quadrant-1 Manage Closely
-    quadrant-2 Keep Satisfied
-    quadrant-3 Monitor
-    quadrant-4 Keep Informed
-
-    "Ban giam doc": [0.90, 0.95]
-    "Operation Staff": [0.90, 0.85]
-    "Admin": [0.85, 0.85]
-    "Payment Provider": [0.50, 0.75]
-    "Map Location Provider": [0.50, 0.70]
-    "Customer": [0.90, 0.35]
-    "Driver": [0.85, 0.35]
-    "Notification Provider": [0.40, 0.35]
-```
-##  Mục đích nghiệp vụ
+## 3.1. Mục đích nghiệp vụ
 
 | ID | Mục đích nghiệp vụ | Mô tả |
 |---|---|---|
-| BO-01 | **Cải thiện trải nghiệm khách hàng** | Giúp khách hàng đặt xe nhanh chóng, dễ dàng theo dõi chuyến đi và quản lý thông tin thanh toán. |
+| **BO-01** | **Cải thiện trải nghiệm khách hàng** | Giúp khách hàng đặt xe nhanh chóng, theo dõi trạng thái chuyến, biết thông tin tài xế và thời gian dự kiến đến, xem lịch sử, thanh toán và đánh giá tài xế. |
+| **BO-02** | **Tự động hóa quy trình đặt xe** | Giảm sự phụ thuộc vào tổng đài và thao tác thủ công trong việc tiếp nhận yêu cầu, tìm kiếm và phân công tài xế. |
+| **BO-03** | **Nâng cao hiệu quả phân công tài xế** | Tự động tìm và ưu tiên tài xế phù hợp dựa trên vị trí, trạng thái sẵn sàng và các tiêu chí vận hành. |
+| **BO-04** | **Nâng cao hiệu quả vận hành** | Cung cấp công cụ giúp nhân viên vận hành theo dõi chuyến đi, trạng thái tài xế, quản lý phương tiện và xử lý các trường hợp bất thường. |
+| **BO-05** | **Quản lý tập trung dữ liệu** | Tập trung quản lý thông tin khách hàng, tài xế, phương tiện, chuyến đi, giao dịch và lịch sử hoạt động. |
+| **BO-06** | **Nâng cao hiệu quả thanh toán** | Chuẩn hóa việc tính cước và hỗ trợ thanh toán tiền mặt hoặc thanh toán điện tử thông qua nhà cung cấp bên ngoài. |
+| **BO-07** | **Nâng cao khả năng giám sát và ra quyết định** | Cung cấp dữ liệu và báo cáo về số lượng chuyến, doanh thu, tỷ lệ hoàn thành, tỷ lệ hủy và hiệu quả hoạt động của tài xế. |
+| **BO-08** | **Đảm bảo khả năng mở rộng và ổn định** | Xây dựng hệ thống có khả năng phục vụ số lượng lớn khách hàng và tài xế, đồng thời hạn chế ảnh hưởng khi một thành phần gặp sự cố. |
+| **BO-09** | **Tăng khả năng mở rộng tính năng** | Cho phép bổ sung loại dịch vụ, phương thức thanh toán, nhà cung cấp thanh toán, kênh thông báo và các chức năng mới trong tương lai. |
+| **BO-10** | **Đảm bảo bảo mật và kiểm soát hệ thống** | Bảo vệ dữ liệu cá nhân, dữ liệu vị trí và dữ liệu giao dịch; kiểm soát quyền truy cập và lưu vết các thao tác quan trọng. |
 
-```
-| BO-02 | **Tự động hóa quy trình đặt xe** | Giảm sự phụ thuộc vào thao tác thủ công trong việc tiếp nhận yêu cầu và phân công tài xế. |
-| BO-03 | **Nâng cao hiệu quả phân công tài xế** | Tự động tìm và ưu tiên tài xế phù hợp, gần khách hàng và sẵn sàng nhận chuyến. |
-| BO-04 | **Nâng cao hiệu quả vận hành** | Cung cấp công cụ giúp nhân viên vận hành theo dõi, quản lý và xử lý các chuyến đi hiệu quả hơn. |
-| BO-05 | **Quản lý tập trung dữ liệu** | Tập trung quản lý thông tin khách hàng, tài xế, phương tiện, chuyến đi và giao dịch. |
-| BO-06 | **Tăng tính minh bạch trong thanh toán** | Quản lý tập trung thông tin cước và kết quả thanh toán, đồng thời hỗ trợ nhiều phương thức thanh toán. |
-| BO-07 | **Nâng cao khả năng giám sát và ra quyết định** | Cung cấp báo cáo về số lượng chuyến, doanh thu, tỷ lệ hoàn thành, tỷ lệ hủy và hiệu quả tài xế. |
-| BO-08 | **Đảm bảo khả năng mở rộng** | Xây dựng nền tảng có thể phục vụ số lượng lớn khách hàng và tài xế khi doanh nghiệp phát triển. |
-| BO-09 | **Tăng khả năng mở rộng tính năng** | Cho phép bổ sung dịch vụ, phương thức thanh toán, kênh thông báo và các tính năng mới trong tương lai. |
-| BO-10 | **Nâng cao độ ổn định và bảo mật** | Đảm bảo hệ thống hoạt động ổn định, bảo vệ dữ liệu và hạn chế ảnh hưởng khi một thành phần gặp sự cố. |
+---
 
-## 4. System Users
+# Bước 4: System Users
+
+## 4.1. Người dùng chính
+
+Hệ thống có **3 nhóm người dùng chính**:
 
 | # | User | Mục đích sử dụng |
 |---|---|---|
-| 1 | **Customer** | Đặt xe, theo dõi chuyến, thanh toán và đánh giá tài xế |
-| 2 | **Driver** | Nhận chuyến, thực hiện chuyến và cập nhật vị trí/trạng thái |
-| 3 | **Operation Staff** | Theo dõi và quản lý hoạt động đặt xe, xử lý sự cố |
-| 4 | **Admin** | Quản trị hệ thống, phân quyền và theo dõi audit log |
+| 1 | **Customer** | Đăng ký, đăng nhập, đặt xe, theo dõi chuyến, thanh toán, xem lịch sử và đánh giá tài xế |
+| 2 | **Driver** | Quản lý hồ sơ, trạng thái sẵn sàng, nhận/từ chối chuyến, cập nhật vị trí và trạng thái chuyến |
+| 3 | **Operation Staff** | Theo dõi và quản lý khách hàng, tài xế, phương tiện, chuyến đi và xử lý sự cố |
 
+## 4.2. Người dùng / hệ thống tương tác khác
 
-## 5. Yêu cầu nghiệp vụ (Business Requirements)
+| # | User / System | Mục đích sử dụng |
+|---|---|---|
+| 1 | **System Admin** | Quản trị tài khoản, phân quyền và cấu hình hệ thống |
+| 2 | **Management** | Theo dõi KPI, doanh thu, báo cáo và hiệu quả hoạt động |
+| 3 | **Finance / Accounting** | Theo dõi giao dịch, thanh toán và doanh thu |
+| 4 | **Customer Support** | Hỗ trợ khách hàng và tra cứu thông tin chuyến |
+| 5 | **Payment Provider** | Xử lý các giao dịch thanh toán điện tử |
+| 6 | **Notification Provider** | Gửi Push Notification, SMS, Email và các kênh thông báo khác |
+| 7 | **Map / Location Provider** | Cung cấp bản đồ, vị trí, khoảng cách và dữ liệu hỗ trợ tính ETA |
 
-| ID     | Yêu cầu nghiệp vụ | Mô tả |
-|--------|---|---|
-| BR-01 | **Đặt xe trực tuyến** | Cho phép khách hàng đặt xe trực tuyến một cách nhanh chóng và thuận tiện. |
-| BR-02 | **Tự động tìm và phân công tài xế** | Tự động tìm tài xế phù hợp dựa trên vị trí, trạng thái sẵn sàng và các tiêu chí vận hành. |
-| BR-03 | **Theo dõi chuyến đi** | Cho phép khách hàng theo dõi trạng thái chuyến đi, thông tin tài xế và thời gian dự kiến tài xế đến. |
-| BR-04 | **Quản lý chuyến đi** | Quản lý toàn bộ vòng đời chuyến đi từ khi tạo yêu cầu đến khi hoàn thành hoặc hủy chuyến. |
-| BR-05 | **Tính cước** | Xác định số tiền khách hàng phải trả dựa trên thông tin chuyến đi và chính sách tính cước của doanh nghiệp. |
-| BR-06 | **Quản lý thanh toán** | Hỗ trợ thanh toán tiền mặt và thanh toán điện tử thông qua nhà cung cấp thanh toán bên ngoài. |
-| BR-07 | **Quản lý thông báo** | Gửi thông báo cho khách hàng và tài xế về các sự kiện quan trọng trong quá trình đặt và thực hiện chuyến đi. |
-| BR-08 | **Quản lý tài xế và phương tiện** | Cho phép quản lý thông tin tài xế, phương tiện, trạng thái hoạt động và vị trí của tài xế. |
-| BR-09 | **Quản lý vận hành** | Cung cấp công cụ để nhân viên vận hành quản lý khách hàng, tài xế, phương tiện, chuyến đi và giao dịch. |
-| BR-10 | **Báo cáo và thống kê** | Cung cấp báo cáo về số lượng chuyến, doanh thu, tỷ lệ hoàn thành, tỷ lệ hủy và hiệu quả hoạt động của tài xế. |
-| BR-11 | **Bảo mật và kiểm soát truy cập** | Bảo vệ thông tin cá nhân, dữ liệu vị trí, dữ liệu giao dịch và kiểm soát quyền truy cập của người dùng. |
-| BR-12 | **Khả năng mở rộng và ổn định** | Đảm bảo hệ thống có thể phục vụ số lượng lớn người dùng và hạn chế ảnh hưởng khi một thành phần gặp sự cố. |
-| BR-13 | **Khả năng mở rộng tính năng** | Cho phép bổ sung loại dịch vụ, phương thức thanh toán, kênh thông báo và các tính năng mới trong tương lai. |
+---
+
+# Bước 5: Business Requirements
+
+## 5.1. Yêu cầu nghiệp vụ
+
+| ID | Yêu cầu nghiệp vụ | Mô tả |
+|---|---|---|
+| **BR-01** | **Đặt xe trực tuyến** | Cho phép khách hàng tạo yêu cầu đặt xe, nhập điểm đón, điểm đến và lựa chọn loại xe. |
+| **BR-02** | **Tự động tìm và phân công tài xế** | Tự động tìm tài xế phù hợp dựa trên vị trí, trạng thái sẵn sàng và các tiêu chí vận hành. |
+| **BR-03** | **Xử lý tài xế từ chối hoặc không phản hồi** | Tiếp tục tìm tài xế khác khi tài xế được đề xuất từ chối hoặc không phản hồi mà không yêu cầu khách hàng tạo lại yêu cầu. |
+| **BR-04** | **Theo dõi chuyến đi** | Cho phép khách hàng theo dõi trạng thái chuyến, thông tin tài xế và thời gian dự kiến tài xế đến. |
+| **BR-05** | **Quản lý vòng đời chuyến đi** | Quản lý chuyến từ khi tạo yêu cầu, tìm tài xế, nhận chuyến, đón khách, di chuyển đến hoàn thành hoặc hủy chuyến. |
+| **BR-06** | **Quản lý vị trí tài xế** | Lưu và sử dụng thông tin vị trí tài xế để hỗ trợ tìm kiếm tài xế gần khách hàng và tính ETA. |
+| **BR-07** | **Tính cước** | Xác định số tiền khách hàng phải trả dựa trên loại dịch vụ, thông tin chuyến đi và chính sách tính cước. |
+| **BR-08** | **Quản lý thanh toán** | Hỗ trợ thanh toán tiền mặt và thanh toán điện tử thông qua Payment Provider mà không lưu trực tiếp thông tin thanh toán nhạy cảm. |
+| **BR-09** | **Xử lý thanh toán thất bại** | Thông báo kết quả thanh toán và cho phép xử lý lại giao dịch theo chính sách của doanh nghiệp. |
+| **BR-10** | **Quản lý thông báo** | Gửi thông báo cho khách hàng và tài xế khi xảy ra các sự kiện quan trọng trong quá trình đặt và thực hiện chuyến. |
+| **BR-11** | **Quản lý tài xế và phương tiện** | Quản lý hồ sơ tài xế, thông tin phương tiện, trạng thái hoạt động và thông tin vị trí. |
+| **BR-12** | **Quản lý vận hành** | Cung cấp công cụ để Operation Staff theo dõi chuyến đang diễn ra, trạng thái tài xế và xử lý các trường hợp chuyến bị lỗi. |
+| **BR-13** | **Quản lý người dùng và phân quyền** | Quản lý tài khoản, xác thực người dùng và kiểm soát quyền truy cập đối với các chức năng yêu cầu tài khoản hoặc quyền quản trị. |
+| **BR-14** | **Báo cáo và thống kê** | Cung cấp báo cáo về số lượng chuyến, doanh thu, tỷ lệ hoàn thành, tỷ lệ hủy và hiệu quả hoạt động của tài xế. |
+| **BR-15** | **Đánh giá tài xế** | Cho phép khách hàng đánh giá tài xế sau khi chuyến đi hoàn thành. |
+| **BR-16** | **Lưu vết hoạt động** | Ghi nhận các thao tác quan trọng để phục vụ kiểm tra, giám sát và điều tra khi xảy ra sự cố. |
+| **BR-17** | **Đảm bảo khả năng mở rộng và ổn định** | Cho phép các thành phần mở rộng độc lập khi tải tăng và hạn chế việc lỗi ở thanh toán hoặc thông báo ảnh hưởng đến toàn bộ hệ thống. |
+| **BR-18** | **Hỗ trợ mở rộng tính năng** | Cho phép bổ sung loại dịch vụ, phương thức thanh toán, nhà cung cấp thanh toán, kênh thông báo và các chức năng mới trong tương lai. |
