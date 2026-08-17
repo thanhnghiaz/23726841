@@ -1,4 +1,4 @@
-# <sub>23726841_NguyenThanhNghia_cabsystem</sub>
+# 23726841_NguyenThanhNghia_cabsystem
 
 # Bước 1: Tổng quan hệ thống
 
