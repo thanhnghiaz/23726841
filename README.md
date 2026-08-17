@@ -69,3 +69,25 @@ Hệ thống CAB mới được xây dựng nhằm:
   - Các chức năng mới trong tương lai.
 
 ---
+## 1.3. Ai sử dụng hệ thống?
+
+Hệ thống có 3 nhóm người dùng chính:
+
+| Người dùng | Vai trò | Chức năng chính |
+|---|---|---|
+| **Customer** | Khách hàng | Đăng ký, đặt xe, theo dõi chuyến, thanh toán, đánh giá |
+| **Driver** | Tài xế | Nhận chuyến, cập nhật vị trí, cập nhật trạng thái, hoàn thành chuyến |
+| **Operation Staff** | Nhân viên vận hành | Quản lý khách hàng, tài xế, phương tiện, chuyến đi và xử lý sự cố |
+
+### Các bên sử dụng / tương tác khác
+
+| Người dùng / Hệ thống | Vai trò |
+|---|---|
+| **System Admin** | Quản trị tài khoản, phân quyền và cấu hình hệ thống |
+| **Management** | Xem báo cáo, KPI, doanh thu và hiệu quả hoạt động |
+| **Finance / Accounting** | Theo dõi giao dịch, thanh toán và doanh thu |
+| **Customer Support** | Hỗ trợ khách hàng và tra cứu thông tin chuyến |
+| **Payment Gateway** | Xử lý thanh toán điện tử |
+| **Notification Provider** | Gửi Push Notification, SMS, Email hoặc các kênh khác |
+
+---
