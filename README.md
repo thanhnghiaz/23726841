@@ -99,16 +99,16 @@ Stakeholder là cá nhân, nhóm người hoặc tổ chức có ảnh hưởng 
 
 | STT | Stakeholder | Tên / Đối tượng | Vai trò |
 |---|---|---|---|
-| 1 | Customer | Khách hàng | Sử dụng dịch vụ để đặt xe, theo dõi chuyến, thanh toán và đánh giá tài xế |
-| 2 | Driver | Tài xế | Nhận chuyến, thực hiện chuyến, cập nhật vị trí và trạng thái chuyến |
-| 3 | Operation Staff | Nhân viên vận hành | Theo dõi chuyến, quản lý tài xế và hỗ trợ xử lý sự cố |
-| 4 | System Admin | Quản trị viên | Quản lý tài khoản, phân quyền và cấu hình hệ thống |
-| 5 | Management | Ban giám đốc | Định hướng kinh doanh, theo dõi KPI, doanh thu và báo cáo |
-| 6 | Finance / Accounting | Bộ phận tài chính | Theo dõi thanh toán, giao dịch và doanh thu |
-| 7 | Customer Support | Chăm sóc khách hàng | Tiếp nhận và xử lý yêu cầu hỗ trợ từ khách hàng |
-| 8 | Product Owner | Chủ sản phẩm | Xác định mục tiêu sản phẩm và ưu tiên các yêu cầu |
-| 9 | Business Analyst | BA | Thu thập, phân tích và làm rõ yêu cầu nghiệp vụ |
-| 10 | Development Team | Đội phát triển | Phân tích kỹ thuật, xây dựng và bảo trì hệ thống |
-| 11 | Security / Compliance | Bảo mật / Tuân thủ | Kiểm soát bảo mật, quyền truy cập và yêu cầu tuân thủ |
-| 12 | Payment Provider | Nhà cung cấp thanh toán | Xử lý các giao dịch thanh toán điện tử |
-| 13 | Notification Provider | Nhà cung cấp thông báo | Cung cấp dịch vụ Push Notification, SMS, Email |
+| 1 | Khách hàng | Sử dụng dịch vụ để đặt xe, theo dõi chuyến, thanh toán và đánh giá tài xế |
+| 2 | Tài xế | Nhận chuyến, thực hiện chuyến, cập nhật vị trí và trạng thái chuyến |
+| 3 | Nhân viên vận hành | Theo dõi chuyến, quản lý tài xế và hỗ trợ xử lý sự cố |
+| 4 | Quản trị viên | Quản lý tài khoản, phân quyền và cấu hình hệ thống |
+| 5 | Ban giám đốc | Định hướng kinh doanh, theo dõi KPI, doanh thu và báo cáo |
+| 6 | Bộ phận tài chính | Theo dõi thanh toán, giao dịch và doanh thu |
+| 7 | Chăm sóc khách hàng | Tiếp nhận và xử lý yêu cầu hỗ trợ từ khách hàng |
+| 8 | Chủ sản phẩm | Xác định mục tiêu sản phẩm và ưu tiên các yêu cầu |
+| 9 | BA | Thu thập, phân tích và làm rõ yêu cầu nghiệp vụ |
+| 10 | Đội phát triển | Phân tích kỹ thuật, xây dựng và bảo trì hệ thống |
+| 11 | Bảo mật / Tuân thủ | Kiểm soát bảo mật, quyền truy cập và yêu cầu tuân thủ |
+| 12 | Nhà cung cấp thanh toán | Xử lý các giao dịch thanh toán điện tử |
+| 13 | Nhà cung cấp thông báo | Cung cấp dịch vụ Push Notification, SMS, Email |
