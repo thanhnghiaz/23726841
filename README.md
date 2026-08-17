@@ -111,8 +111,11 @@ Hệ thống có 3 nhóm người dùng chính:
 | **Nhà cung cấp thanh toán** | Xử lý các giao dịch thanh toán điện tử |
 | **Nhà cung cấp dịch vụ thông báo** | Cung cấp dịch vụ gửi thông báo như Push, SMS, Email |
 
+## 2.2. Ma trận các bên liên quan
+
+```mermaid
 quadrantChart
-    title Ma trận các bên liên quan - CAB System
+    title CAB System - Stakeholder Matrix
     x-axis "Mức độ quan tâm thấp" --> "Mức độ quan tâm cao"
     y-axis "Quyền lực thấp" --> "Quyền lực cao"
 
@@ -135,3 +138,4 @@ quadrantChart
     "Chăm sóc khách hàng": [0.75, 0.30]
 
     "Các phòng ban liên quan": [0.20, 0.20]
+```
