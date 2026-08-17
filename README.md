@@ -202,4 +202,60 @@ quadrantChart
 | BR-11 | **Bảo mật và kiểm soát truy cập** | Bảo vệ thông tin cá nhân, dữ liệu vị trí, dữ liệu giao dịch và kiểm soát quyền truy cập của người dùng. |
 | BR-12 | **Khả năng mở rộng và ổn định** | Đảm bảo hệ thống có thể phục vụ số lượng lớn người dùng và hạn chế ảnh hưởng khi một thành phần gặp sự cố. |
 | BR-13 | **Khả năng mở rộng tính năng** | Cho phép bổ sung loại dịch vụ, phương thức thanh toán, kênh thông báo và các tính năng mới trong tương lai. |
+# Functional Requirements – Driver Matching & Dispatch
+
+## BR-02 – Tự động tìm và phân công tài xế
+
+| ID | Yêu cầu chức năng | Mô tả |
+|---|---|---|
+| FR-02.01 | Xác định vị trí tài xế | Hệ thống xác định vị trí hiện tại của các tài xế đang hoạt động để phục vụ việc tìm kiếm tài xế phù hợp. |
+| FR-02.02 | Kiểm tra trạng thái tài xế | Hệ thống chỉ gửi yêu cầu chuyến đến các tài xế đang ở trạng thái sẵn sàng nhận chuyến (`AVAILABLE`). |
+| FR-02.03 | Kiểm tra loại xe | Hệ thống kiểm tra loại xe của tài xế và chỉ đề xuất tài xế có loại xe phù hợp với yêu cầu của khách hàng. |
+| FR-02.04 | Xếp hạng tài xế | Hệ thống sắp xếp các tài xế phù hợp dựa trên các tiêu chí nghiệp vụ. Tài xế có đánh giá cao được ưu tiên. |
+| FR-02.05 | Ưu tiên tài xế gần khách hàng | Hệ thống ưu tiên các tài xế phù hợp có vị trí gần điểm đón của khách hàng. |
+| FR-02.06 | Gửi yêu cầu nhận chuyến | Hệ thống gửi yêu cầu nhận chuyến đến tài xế được ưu tiên. |
+| FR-02.07 | Chờ tài xế xác nhận | Hệ thống chờ tài xế phản hồi yêu cầu nhận chuyến trong khoảng thời gian được quy định. |
+| FR-02.08 | Xử lý tài xế từ chối | Nếu tài xế từ chối chuyến, hệ thống tiếp tục tìm và gửi yêu cầu đến tài xế phù hợp tiếp theo. |
+| FR-02.09 | Xử lý tài xế không phản hồi | Nếu tài xế không phản hồi trong thời gian quy định, hệ thống xem yêu cầu là hết thời gian chờ và tiếp tục tìm tài xế khác. |
+| FR-02.10 | Xác nhận tài xế | Khi tài xế chấp nhận chuyến, hệ thống ghi nhận tài xế và cập nhật trạng thái chuyến sang `DRIVER_ASSIGNED`. |
+| FR-02.11 | Không tìm được tài xế | Nếu không tìm được tài xế phù hợp, hệ thống thông báo cho khách hàng và cập nhật trạng thái chuyến tương ứng. |
+
+---
+
+## Driver Matching Flow
+
+```text
+Customer tạo yêu cầu đặt xe
+            |
+            v
+    Xác định vị trí Driver
+            |
+            v
+   Lọc Driver AVAILABLE
+            |
+            v
+      Kiểm tra loại xe
+            |
+            v
+    Xếp hạng Driver phù hợp
+            |
+            v
+   Ưu tiên Driver gần nhất
+            |
+            v
+     Gửi yêu cầu nhận chuyến
+            |
+            v
+      Chờ Driver xác nhận
+            |
+       +----+----+
+       |         |
+       v         v
+    ACCEPT    REJECT/TIMEOUT
+       |         |
+       v         v
+Driver Assigned  Tìm Driver tiếp theo
+       |
+       v
+Thông báo Customer
 
