@@ -97,45 +97,47 @@ Hệ thống có 3 nhóm người dùng chính:
 
 | Stakeholder | Vai trò |
 |---|---|
-| **Khách hàng** | Đặt xe, theo dõi chuyến đi, thanh toán và đánh giá tài xế |
-| **Tài xế** | Nhận chuyến, thực hiện chuyến, cập nhật vị trí và trạng thái chuyến |
-| **Nhân viên vận hành** | Theo dõi chuyến, quản lý tài xế và xử lý các sự cố vận hành |
-| **Quản trị viên hệ thống** | Quản lý tài khoản, phân quyền và cấu hình hệ thống |
-| **Ban giám đốc** | Định hướng kinh doanh, theo dõi KPI, doanh thu và báo cáo |
-| **Bộ phận tài chính / kế toán** | Quản lý thanh toán, giao dịch và doanh thu |
-| **Bộ phận chăm sóc khách hàng** | Hỗ trợ khách hàng và xử lý các yêu cầu liên quan đến chuyến đi |
-| **Chủ sản phẩm** | Xác định mục tiêu sản phẩm, phạm vi và ưu tiên chức năng |
-| **Chuyên viên phân tích nghiệp vụ (BA)** | Thu thập, phân tích và làm rõ yêu cầu nghiệp vụ |
-| **Đội phát triển** | Thiết kế, phát triển, kiểm thử và bảo trì hệ thống |
-| **Bộ phận bảo mật / tuân thủ** | Kiểm soát bảo mật, phân quyền và tuân thủ quy định |
-| **Nhà cung cấp thanh toán** | Xử lý các giao dịch thanh toán điện tử |
-| **Nhà cung cấp dịch vụ thông báo** | Cung cấp dịch vụ gửi thông báo như Push, SMS, Email |
+| **Customer** | Đặt xe, theo dõi chuyến đi, thanh toán và đánh giá tài xế |
+| **Driver** | Nhận chuyến, thực hiện chuyến, cập nhật vị trí và trạng thái chuyến |
+| **Operation Staff** | Theo dõi chuyến, quản lý tài xế và xử lý các sự cố vận hành |
+| **System Administrator** | Quản lý tài khoản, phân quyền và cấu hình hệ thống |
+| **Management** | Định hướng kinh doanh, theo dõi KPI, doanh thu và báo cáo |
+| **Finance / Accounting** | Quản lý thanh toán, giao dịch và doanh thu |
+| **Customer Support** | Hỗ trợ khách hàng và xử lý các yêu cầu liên quan đến chuyến đi |
+| **Product Owner** | Xác định mục tiêu sản phẩm, phạm vi và ưu tiên chức năng |
+| **Business Analyst (BA)** | Thu thập, phân tích và làm rõ yêu cầu nghiệp vụ |
+| **Development Team** | Thiết kế, phát triển, kiểm thử và bảo trì hệ thống |
+| **Security / Compliance** | Kiểm soát bảo mật, phân quyền và tuân thủ quy định |
+| **Payment Provider** | Xử lý các giao dịch thanh toán điện tử |
+| **Notification Provider** | Cung cấp dịch vụ gửi thông báo như Push, SMS, Email |
 
-## 2.2. Ma trận các bên liên quan
+## 2.2. Stakeholder Matrix
 
 ```mermaid
 quadrantChart
     title CAB System - Stakeholder Matrix
-    x-axis "Mức độ quan tâm thấp" --> "Mức độ quan tâm cao"
-    y-axis "Quyền lực thấp" --> "Quyền lực cao"
+    x-axis "Interest thấp" --> "Interest cao"
+    y-axis "Power thấp" --> "Power cao"
 
-    quadrant-1 "Giữ hài lòng"
-    quadrant-2 "Quản lý chặt chẽ"
-    quadrant-3 "Theo dõi"
-    quadrant-4 "Cập nhật thông tin"
+    quadrant-1 "Keep Satisfied"
+    quadrant-2 "Manage Closely"
+    quadrant-3 "Monitor"
+    quadrant-4 "Keep Informed"
 
-    "Ban giám đốc": [0.85, 0.90]
-    "Nhân viên vận hành": [0.90, 0.85]
-    "Chủ sản phẩm": [0.90, 0.90]
-    "BA": [0.95, 0.75]
-    "Đội phát triển": [0.80, 0.75]
+    "Management": [0.85, 0.90]
+    "Operation Staff": [0.90, 0.85]
+    "Product Owner": [0.90, 0.90]
+    "Business Analyst": [0.95, 0.75]
+    "Development Team": [0.80, 0.75]
 
-    "Tài chính / Kế toán": [0.45, 0.80]
-    "Bảo mật / Tuân thủ": [0.40, 0.85]
+    "Finance / Accounting": [0.45, 0.80]
+    "Security / Compliance": [0.40, 0.85]
 
-    "Khách hàng": [0.90, 0.35]
-    "Tài xế": [0.85, 0.40]
-    "Chăm sóc khách hàng": [0.75, 0.30]
+    "Customer": [0.90, 0.35]
+    "Driver": [0.85, 0.40]
+    "Customer Support": [0.75, 0.30]
 
-    "Các phòng ban liên quan": [0.20, 0.20]
+    "System Administrator": [0.60, 0.75]
+    "Payment Provider": [0.50, 0.65]
+    "Notification Provider": [0.40, 0.45]
 ```
