@@ -110,3 +110,28 @@ Hệ thống có 3 nhóm người dùng chính:
 | **Bộ phận bảo mật / tuân thủ** | Kiểm soát bảo mật, phân quyền và tuân thủ quy định |
 | **Nhà cung cấp thanh toán** | Xử lý các giao dịch thanh toán điện tử |
 | **Nhà cung cấp dịch vụ thông báo** | Cung cấp dịch vụ gửi thông báo như Push, SMS, Email |
+
+quadrantChart
+    title Ma trận các bên liên quan - CAB System
+    x-axis "Mức độ quan tâm thấp" --> "Mức độ quan tâm cao"
+    y-axis "Quyền lực thấp" --> "Quyền lực cao"
+
+    quadrant-1 "Giữ hài lòng"
+    quadrant-2 "Quản lý chặt chẽ"
+    quadrant-3 "Theo dõi"
+    quadrant-4 "Cập nhật thông tin"
+
+    "Ban giám đốc": [0.85, 0.90]
+    "Nhân viên vận hành": [0.90, 0.85]
+    "Chủ sản phẩm": [0.90, 0.90]
+    "BA": [0.95, 0.75]
+    "Đội phát triển": [0.80, 0.75]
+
+    "Tài chính / Kế toán": [0.45, 0.80]
+    "Bảo mật / Tuân thủ": [0.40, 0.85]
+
+    "Khách hàng": [0.90, 0.35]
+    "Tài xế": [0.85, 0.40]
+    "Chăm sóc khách hàng": [0.75, 0.30]
+
+    "Các phòng ban liên quan": [0.20, 0.20]
