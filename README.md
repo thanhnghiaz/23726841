@@ -1,6 +1,9 @@
-# 23726841_NguyenThanhNghia_cabsystem
-## Bước 1: Tổng quan hệ thống
-### 1.1. Vấn đề của hệ thống hiện tại
+<p><strong>23726841_NguyenThanhNghia_cabsystem</strong></p>
+
+# Bước 1: Tổng quan hệ thống
+
+## 1.1. Vấn đề của hệ thống hiện tại
+
 
 Hệ thống CAB hiện tại đang tồn tại một số vấn đề:
 
@@ -22,11 +25,11 @@ Hệ thống CAB hiện tại đang tồn tại một số vấn đề:
   - Chính sách hủy chuyến.
   - Xử lý khi mất kết nối.
   - Thời gian lưu trữ dữ liệu.
-### 1.2. Mục tiêu đem lại
+## 1.2. Mục tiêu đem lại
 
 Hệ thống CAB mới được xây dựng nhằm:
 
-#### Đối với khách hàng
+### Đối với khách hàng
 
 - Đặt xe nhanh chóng và thuận tiện.
 - Theo dõi trạng thái chuyến đi.
@@ -36,7 +39,7 @@ Hệ thống CAB mới được xây dựng nhằm:
 - Hỗ trợ thanh toán tiền mặt và điện tử.
 - Đánh giá tài xế sau khi hoàn thành chuyến.
 
-#### Đối với tài xế
+### Đối với tài xế
 
 - Nhận chuyến tự động dựa trên tiêu chí phù hợp.
 - Chủ động chuyển trạng thái sẵn sàng nhận chuyến.
@@ -45,7 +48,7 @@ Hệ thống CAB mới được xây dựng nhằm:
 - Cập nhật trạng thái chuyến.
 - Cập nhật vị trí để hỗ trợ tìm kiếm tài xế.
 
-#### Đối với nhân viên vận hành
+### Đối với nhân viên vận hành
 
 - Quản lý khách hàng, tài xế và phương tiện.
 - Theo dõi các chuyến đang diễn ra.
@@ -54,7 +57,7 @@ Hệ thống CAB mới được xây dựng nhằm:
 - Tra cứu lịch sử chuyến đi và giao dịch.
 - Theo dõi và quản lý hoạt động của hệ thống.
 
-#### Đối với doanh nghiệp
+### Đối với doanh nghiệp
 
 - Tự động hóa quy trình đặt và phân công xe.
 - Giảm sự phụ thuộc vào thao tác thủ công.
@@ -70,7 +73,7 @@ Hệ thống CAB mới được xây dựng nhằm:
   - Các chức năng mới trong tương lai.
 
 ---
-### 1.3. Ai sử dụng hệ thống?
+## 1.3. Ai sử dụng hệ thống?
 
 Hệ thống có 3 nhóm người dùng chính:
 
@@ -80,7 +83,7 @@ Hệ thống có 3 nhóm người dùng chính:
 | **Driver** | Tài xế | Nhận chuyến, cập nhật vị trí, cập nhật trạng thái, hoàn thành chuyến |
 | **Operation Staff** | Nhân viên vận hành | Quản lý khách hàng, tài xế, phương tiện, chuyến đi và xử lý sự cố |
 
-#### Các bên sử dụng / tương tác khác
+### Các bên sử dụng / tương tác khác
 
 | Người dùng / Hệ thống | Vai trò |
 |---|---|
@@ -94,7 +97,7 @@ Hệ thống có 3 nhóm người dùng chính:
 ---
 ## Bước 2: Stakeholder Analysis
 
-### 2.1. Các bên liên quan – Stakeholder
+## 2.1. Các bên liên quan – Stakeholder
 
 | # | Stakeholder | Vai trò |
 |---|---|---|
@@ -111,7 +114,7 @@ Hệ thống có 3 nhóm người dùng chính:
 
 ---
 
-### 2.2. Stakeholder Matrix
+## 2.2. Stakeholder Matrix
 
 | Stakeholder | Power | Interest | Strategy |
 |---|---|---|---|
@@ -125,7 +128,7 @@ Hệ thống có 3 nhóm người dùng chính:
 | **Payment Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo tích hợp, giao dịch và xử lý lỗi thanh toán hoạt động ổn định |
 | **Notification Provider** | Trung bình | Trung bình | **Monitor** – Theo dõi khả năng tích hợp và trạng thái dịch vụ |
 | **Map / Location Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo dữ liệu vị trí, khoảng cách và ETA hoạt động ổn định |
-### 2.2. Stakeholder Matrix 
+## 2.2. Stakeholder Matrix 
  
 ```mermaid 
 quadrantChart 
@@ -155,9 +158,9 @@ quadrantChart
 ---
 
 
-## Bước 3: Business Objectives
+# Bước 3: Business Objectives
 
-### 3.1. Mục đích nghiệp vụ
+## 3.1. Mục đích nghiệp vụ
 
 | ID | Mục đích nghiệp vụ | Mô tả |
 |---|---|---|
@@ -174,7 +177,7 @@ quadrantChart
 
 ---
 
-### 4. Kế hoạch triển khai 7 tuần
+## 4. Kế hoạch triển khai 7 tuần
 
 | Tuần | Module | Nội dung chính |
 |---|---|---|
@@ -185,7 +188,7 @@ quadrantChart
 | **Tuần 5** | **M07 - Tính cước & thanh toán** | Tính cước, tiền mặt, thanh toán điện tử và xử lý giao dịch thất bại |
 | **Tuần 6** | **M08 - Thông báo** + **M09 - Vận hành & quản trị** + **M10 - Báo cáo & kiểm toán** | Thông báo, quản lý vận hành, báo cáo, phân quyền và audit log |
 | **Tuần 7** | **Tích hợp & hoàn thiện** | Kiểm thử tích hợp, kiểm thử nghiệm thu, sửa lỗi, kiểm thử hiệu năng, triển khai và bàn giao |
-### 5. Yêu cầu nghiệp vụ (Business Requirements)
+## 5. Yêu cầu nghiệp vụ (Business Requirements)
 
 | ID     | Yêu cầu nghiệp vụ | Mô tả |
 |--------|---|---|
@@ -221,41 +224,4 @@ quadrantChart
 | FR-02.11 | Không tìm được tài xế | Nếu không tìm được tài xế phù hợp, hệ thống thông báo cho khách hàng và cập nhật trạng thái chuyến tương ứng. |
 
 ---
-
-## Driver Matching Flow
-
-```text
-Customer tạo yêu cầu đặt xe
-            |
-            v
-    Xác định vị trí Driver
-            |
-            v
-   Lọc Driver AVAILABLE
-            |
-            v
-      Kiểm tra loại xe
-            |
-            v
-    Xếp hạng Driver phù hợp
-            |
-            v
-   Ưu tiên Driver gần nhất
-            |
-            v
-     Gửi yêu cầu nhận chuyến
-            |
-            v
-      Chờ Driver xác nhận
-            |
-       +----+----+
-       |         |
-       v         v
-    ACCEPT    REJECT/TIMEOUT
-       |         |
-       v         v
-Driver Assigned  Tìm Driver tiếp theo
-       |
-       v
-Thông báo Customer
 
