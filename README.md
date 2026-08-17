@@ -124,6 +124,9 @@ Hệ thống có 3 nhóm người dùng chính:
 | **Payment Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo tích hợp, giao dịch và xử lý lỗi thanh toán hoạt động ổn định |
 | **Notification Provider** | Trung bình | Trung bình | **Monitor** – Theo dõi khả năng tích hợp và trạng thái dịch vụ |
 | **Map / Location Provider** | Cao | Trung bình | **Keep Satisfied** – Đảm bảo dữ liệu vị trí, khoảng cách và ETA hoạt động ổn định |
+## 2.2. Stakeholder Matrix 
+ 
+```mermaid 
 quadrantChart 
     title CAB System - Stakeholder Matrix 
     x-axis "Interest thấp" --> "Interest cao" 
@@ -146,6 +149,7 @@ quadrantChart
     "Payment Provider": [0.50, 0.70] 
     "Notification Provider": [0.50, 0.50] 
     "Map / Location Provider": [0.50, 0.70]
+```
 
 ---
 
