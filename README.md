@@ -113,61 +113,6 @@ Hệ thống có 3 nhóm người dùng chính:
 
 ## 2.2. Stakeholder Matrix
 
-```mermaid
-quadrantChart
-    title CAB System - Stakeholder Matrix
-    x-axis "Interest thấp" --> "Interest cao"
-    y-axis "Power thấp" --> "Power cao"
 
-    quadrant-1 "Keep Satisfied"
-    quadrant-2 "Manage Closely"
-    quadrant-3 "Monitor"
-    quadrant-4 "Keep Informed"
-
-    "Management": [0.85, 0.90]
-    "Operation Staff": [0.90, 0.85]
-    "Product Owner": [0.90, 0.90]
-    "Business Analyst": [0.95, 0.75]
-    "Development Team": [0.80, 0.75]
-
-    "Finance / Accounting": [0.45, 0.80]
-    "Security / Compliance": [0.40, 0.85]
-
-    "Customer": [0.90, 0.35]
-    "Driver": [0.85, 0.40]
-    "Customer Support": [0.75, 0.30]
-
-    "System Administrator": [0.60, 0.75]
-    "Payment Provider": [0.50, 0.65]
-    "Notification Provider": [0.40, 0.45]
-## 2.2. Stakeholder Matrix
-
-```mermaid
-quadrantChart
-    title CAB System - Stakeholder Matrix
-    x-axis "Interest thấp" --> "Interest cao"
-    y-axis "Power thấp" --> "Power cao"
-
-    quadrant-1 "Keep Satisfied"
-    quadrant-2 "Manage Closely"
-    quadrant-3 "Monitor"
-    quadrant-4 "Keep Informed"
-
-    "Management": [0.85, 0.90]
-    "Operation Staff": [0.90, 0.85]
-    "Product Owner": [0.90, 0.90]
-    "Business Analyst": [0.95, 0.75]
-    "Development Team": [0.80, 0.75]
-
-    "Finance / Accounting": [0.45, 0.80]
-    "Security / Compliance": [0.40, 0.85]
-
-    "Customer": [0.90, 0.35]
-    "Driver": [0.85, 0.40]
-    "Customer Support": [0.75, 0.30]
-
-    "System Administrator": [0.60, 0.75]
-    "Payment Provider": [0.50, 0.65]
-    "Notification Provider": [0.40, 0.45]
 ```
 
